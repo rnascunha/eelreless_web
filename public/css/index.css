@@ -1,0 +1,45 @@
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+}
+
+#data {
+  background-color: grey;
+  padding: 5px;
+  border-radius: 5px;
+  min-height: 10ch;
+  max-width: 40ch;
+  overflow-y: auto;
+  width: 100%;
+}
+
+#graph {
+  width: 100%;
+  flex-grow: 6;
+  background-color: beige;
+  border-radius: 5px;
+}
+
+#error {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#error:empty {
+  padding: 0px;
+}
+
+#interval {
+  width: 5ch;
+}

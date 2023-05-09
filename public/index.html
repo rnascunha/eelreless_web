@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Eelreless</title>
+</head>
+<body>
+  <h1>Eelreless</h1>
+  <div id="header">
+    <input id="ip-connect" list="ips" type="text" value="eelreless.local">
+    <button id="btn-connect">Connect</button>
+    <div>
+      <label><input id="enable-continuous" type="checkbox">Interval</label>
+      <input type="number" id="interval" min="1" value="1">
+    </div>
+    <div id="error"></div>
+  </div>
+  <div id="container">
+    <pre id="data"></pre>
+    <div id="graph"></div>
+  </div>
+  <div>
+    <div>
+      <button id="ws-connect">Connect</button>
+      <input id="ws-data-send" value=echo disabled>
+      <button id="ws-send" disabled>Send</button>
+    </div>
+    <pre id="ws-data"></pre>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
